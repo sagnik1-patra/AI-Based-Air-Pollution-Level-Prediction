@@ -1,0 +1,18 @@
+project: AI-Based Air Pollution Level Prediction
+optimization: Artificial Immune System
+optimization_method: Clonal Selection Based Feature Selection
+target: pollutant_avg
+ais_parameters:
+  population_size: 12
+  generations: 10
+  clone_factor: 4
+  mutation_rate: 0.2
+  elite_count: 4
+selected_features:
+- city
+- pollutant_min
+- pollutant_max
+selected_feature_count: 3
+total_feature_count: 8
+best_ais_fitness: 0.9315727454448945
+best_model: AIS + Random Forest

@@ -1,0 +1,54 @@
+{
+    "project_name": "AI-Based Air Pollution Level Prediction",
+    "problem_type": "Regression",
+    "target_variable": "pollutant_avg",
+    "dataset_file": "3b01bcb8-0b14-4abf-b6f2-c1bfd384ba69.csv",
+    "dataset_shape": {
+        "rows": 648,
+        "columns": 11
+    },
+    "input_features": [
+        "state",
+        "city",
+        "station",
+        "latitude",
+        "longitude",
+        "pollutant_id",
+        "pollutant_min",
+        "pollutant_max"
+    ],
+    "numeric_features": [
+        "latitude",
+        "longitude",
+        "pollutant_min",
+        "pollutant_max"
+    ],
+    "categorical_features": [
+        "state",
+        "city",
+        "station",
+        "pollutant_id"
+    ],
+    "models": [
+        "Random Forest Regressor",
+        "Artificial Neural Network"
+    ],
+    "random_forest_metrics": {
+        "MAE": 3.0376410256410264,
+        "MSE": 48.99928051282052,
+        "RMSE": 6.999948607869955,
+        "R2": 0.9330920777007295
+    },
+    "ann_metrics": {
+        "MAE": 4.163136959075928,
+        "MSE": 45.20826721191406,
+        "RMSE": 6.723709334282235,
+        "R2": 0.9382686614990234
+    },
+    "saved_files": {
+        "h5": "air_pollution_model.h5",
+        "pkl": "air_pollution_model.pkl",
+        "yaml": "config.yaml",
+        "json": "metadata.json"
+    }
+}

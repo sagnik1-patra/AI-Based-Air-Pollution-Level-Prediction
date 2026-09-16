@@ -1,0 +1,23 @@
+project:
+  name: AI-Based Air Pollution Level Prediction
+  task: Regression
+  target: pollutant_avg
+dataset:
+  path: C:\Users\sagni\Downloads\AI-Based Air Pollution Level Prediction\3b01bcb8-0b14-4abf-b6f2-c1bfd384ba69.csv
+  original_rows: 710
+  usable_rows: 648
+  columns: 11
+training:
+  test_size: 0.2
+  random_state: 42
+  ann_epochs: 200
+  ann_batch_size: 32
+random_forest:
+  n_estimators: 300
+  mae: 3.0376410256410264
+  rmse: 6.999948607869955
+  r2: 0.9330920777007295
+ann:
+  mae: 4.163136959075928
+  rmse: 6.723709334282235
+  r2: 0.9382686614990234

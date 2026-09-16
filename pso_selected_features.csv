@@ -1,0 +1,9 @@
+Feature,PSO_Selected
+state,0
+city,1
+station,0
+latitude,0
+longitude,0
+pollutant_id,0
+pollutant_min,1
+pollutant_max,1

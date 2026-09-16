@@ -1,0 +1,68 @@
+{
+    "project_name": "AI-Based Air Pollution Level Prediction",
+    "optimization_algorithm": "Binary Particle Swarm Optimization (BPSO)",
+    "optimization_goal": "Feature Selection",
+    "problem_type": "Regression",
+    "target_variable": "pollutant_avg",
+    "dataset_file": "3b01bcb8-0b14-4abf-b6f2-c1bfd384ba69.csv",
+    "dataset_records": 648,
+    "original_features": [
+        "state",
+        "city",
+        "station",
+        "latitude",
+        "longitude",
+        "pollutant_id",
+        "pollutant_min",
+        "pollutant_max"
+    ],
+    "selected_features": [
+        "city",
+        "pollutant_min",
+        "pollutant_max"
+    ],
+    "selected_feature_count": 3,
+    "best_particle": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+    ],
+    "best_pso_fitness": 0.9315727454448945,
+    "pso_parameters": {
+        "particles": 15,
+        "iterations": 15,
+        "inertia_weight": 0.729,
+        "cognitive_coefficient": 1.49445,
+        "social_coefficient": 1.49445,
+        "feature_penalty": 0.01
+    },
+    "model_results": {
+        "PSO_Random_Forest": {
+            "MAE": 2.9458176510989014,
+            "MSE": 44.81488038727877,
+            "RMSE": 6.6943917115208285,
+            "R2": 0.9388058252402582,
+            "Performance": 93.88058252402583
+        },
+        "PSO_Gradient_Boosting": {
+            "MAE": 3.3186662594784813,
+            "MSE": 45.00666228742774,
+            "RMSE": 6.708700491706851,
+            "R2": 0.9385439493853625,
+            "Performance": 93.85439493853625
+        },
+        "PSO_ANN": {
+            "MAE": 4.714061287733225,
+            "MSE": 60.83735033560476,
+            "RMSE": 7.799830147868911,
+            "R2": 0.9169273371660406,
+            "Performance": 91.69273371660405
+        }
+    },
+    "best_model": "PSO + Random Forest"
+}

@@ -1,0 +1,3 @@
+Model,MAE,MSE,RMSE,R2_Score,Regression_Performance_Percent
+Random Forest,3.037641,48.999281,6.999949,0.933092,93.31
+Gradient Boosting,3.497564,48.635496,6.973915,0.933589,93.36

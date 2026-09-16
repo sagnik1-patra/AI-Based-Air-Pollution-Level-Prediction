@@ -1,0 +1,49 @@
+{
+    "project_name": "AI-Based Air Pollution Level Prediction",
+    "optimization_algorithm": "Artificial Immune System (AIS)",
+    "ais_approach": "Clonal Selection Feature Optimization",
+    "problem_type": "Regression",
+    "target": "pollutant_avg",
+    "dataset": "3b01bcb8-0b14-4abf-b6f2-c1bfd384ba69.csv",
+    "records": 648,
+    "original_features": [
+        "state",
+        "city",
+        "station",
+        "latitude",
+        "longitude",
+        "pollutant_id",
+        "pollutant_min",
+        "pollutant_max"
+    ],
+    "selected_features": [
+        "city",
+        "pollutant_min",
+        "pollutant_max"
+    ],
+    "best_ais_fitness": 0.9315727454448945,
+    "best_model": "AIS + Random Forest",
+    "models": {
+        "AIS_Random_Forest": {
+            "MAE": 2.9458176510989014,
+            "MSE": 44.81488038727878,
+            "RMSE": 6.694391711520829,
+            "R2": 0.9388058252402582,
+            "Performance": 93.88058252402583
+        },
+        "AIS_Gradient_Boosting": {
+            "MAE": 3.3186662594784813,
+            "MSE": 45.00666228742774,
+            "RMSE": 6.708700491706851,
+            "R2": 0.9385439493853625,
+            "Performance": 93.85439493853625
+        },
+        "AIS_ANN": {
+            "MAE": 4.714061287733225,
+            "MSE": 60.83735033560476,
+            "RMSE": 7.799830147868911,
+            "R2": 0.9169273371660406,
+            "Performance": 91.69273371660405
+        }
+    }
+}

@@ -1,0 +1,26 @@
+project:
+  name: AI-Based Air Pollution Level Prediction
+  task: Regression
+  target: pollutant_avg
+optimization:
+  algorithm: Binary Particle Swarm Optimization
+  purpose: Feature Selection
+  number_of_particles: 15
+  number_of_iterations: 15
+  inertia_weight: 0.729
+  cognitive_coefficient: 1.49445
+  social_coefficient: 1.49445
+  feature_penalty: 0.01
+  best_fitness: 0.9315727454448945
+features:
+  original_feature_count: 8
+  selected_feature_count: 3
+  selected_features:
+  - city
+  - pollutant_min
+  - pollutant_max
+models:
+  random_forest_r2: 0.9388058252402582
+  gradient_boosting_r2: 0.9385439493853625
+  ann_r2: 0.9169273371660406
+  best_model: PSO + Random Forest
